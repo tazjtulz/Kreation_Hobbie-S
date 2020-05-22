@@ -25,7 +25,24 @@ eLatido.addEventListener('click', funcLatido);
     let menuToggle = document.getElementById('menuToggle');
         menuToggle.classList.toggle('menuOpen');    
         
+    
+    if(contMenu.classList.contains('contMenuOpen')){
+        localStorage.setItem('menuOn', 'Sí');
+    }else{
+        localStorage.setItem('menuOn', 'No');
+    }
 }
+
+if(localStorage.getItem('menuOn')==='Sí'){
+    contMenu.classList.add('contMenuOpen');
+    menuToggle.classList.add('menuOpen');
+}else{
+    contMenu.classList.remove('contMenuOpen');
+    menuToggle.classList.remove('menuOpen');
+}
+
+
+
 
 /* LOCAL STORAGE */
 

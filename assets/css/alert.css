@@ -1,0 +1,19 @@
+/* Aquì van los estilos del Alert */
+
+.titleAlert{
+    font-family: 'Courgette', cursive;
+    font-size: 25px;
+    color: #022C51;
+}
+
+.textAlert{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 15px;
+
+}
+
+.button{
+    height: 10px;
+    font-family: 'Courgette', cursive;  
+    color: #F7A500;
+}

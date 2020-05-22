@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(255, 255, 255) !important;
+}
+
+.containerCards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.icDislike {
+    background-color: #022C51;
+}
+
+.mostrar {
+    background-color: rgb(255, 0, 0);
+    transform: scale(1.4);
+    transition: all .6s cubic-bezier(.29, 3.83, .31, -1.14);
+}
+
+.card {
+    background-color: rgb(1, 39, 73) !important;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+}
+
+.title1,
+.title2 {
+    margin: 30px;
+    font-family: 'Courgette', cursive;
+}
+
+.title1 {
+    padding-right: 30px;
+    border-right: 1px solid black;
+}
+
+.linkTitle {
+    display: flex;
+    justify-items: center;
+    text-decoration: none;
+    color: #022C51;
+}
+
+.linkTitle:hover {
+    text-decoration: none;
+    background-color: rgba(58, 58, 58, 0.3);
+    padding: 10px;
+    border-radius: 20px;
+    color: #F7A500;
+}
+
+.select {
+    background-color: rgba(58, 58, 58, 0.3);
+    color: #F7A500;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.select:hover {
+    background-color: rgba(58, 58, 58, 0.3);
+    text-decoration: none;
+    color: #F7A500;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.text-muted,
+.card-text {
+    font-family: 'Titillium Web', sans-serif;
+    color: rgb(206, 206, 206);
+}
+
+.icDislike,
+.icCommit,
+.icShare,
+.icDelete,
+.icLike {
+    width: 20px;
+    margin: 10px 20px;
+}
+
+.icDislike,
+.icCommit,
+.icShare,
+.icDelete:hover {
+    cursor: pointer;
+}
+
+.small {
+    width: 150px !important;
+}
+
+.page-link {
+    background-color: #022C51 !important;
+    color: #F7A500;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+}
+
+.video1,
+.video2,
+.video4,
+.video3 {
+    height: 600px;
+    width: 400px;
+    justify-content: space-between;
+}
+
+
+@media screen and (max-width: 540px) {
+
+    .video1,
+    .video2,
+    .video4,
+    .video3 {
+        margin-left: initial;
+    }
+
+    .icDislike,
+    .icCommit,
+    .icShare,
+    .icDelete,
+    .icLike {
+        width: 20px;
+        margin: 10px 30px;
+    }
+}
+
+@media screen and (max-width:728px) {}
+
+.video1,
+.video2,
+.video4,
+.video3 {
+    margin-left: 0px;
+    height: 400px;
+    width: 300px;
+}
+
+.icDislike,
+.icCommit,
+.icShare,
+.icDelete,
+.icLike {
+    width: 20px;
+    margin: 10px 15px;
+}
+
+
+@media screen and (max-width:1024px) {
+    /*     .pagination{
+        margin-left: 200px; */
+}
+
+.video1,
+.video2,
+.video4,
+.video3 {
+    margin-left: 0px;
+    height: 400px;
+    width: 300px;
+}
+
+.icDislike,
+.icCommit,
+.icShare,
+.icDelete,
+.icLike {
+    width: 20px;
+    margin: 10px 15px;
+}
+
+
+.navPage {
+    display: flex;
+    justify-content: center;
+}
+
+.pagination {
+    justify-content: center;
+}
+
+.commit {
+    resize: none;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: smaller;
+    width: 100%;
+    background-color: rgba(247, 165, 0, 0.623);
+    border-radius: 7px;
+    border: none;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.commit2 {
+    resize: none;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: smaller;
+    width: 100%;
+    background-color: rgba(247, 165, 0, 0.623);
+    border-radius: 7px;
+    border: none;
+    margin-bottom: 10px;
+    color: white;
+}
+/* .commit {
+    display: none;
+} */

@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.titulo{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.title1,
+.title2 {
+    margin: 30px 10px;
+    font-family: 'Courgette', cursive;
+}
+
+.title1 {
+    padding-right: 30px;
+    border-right: 1px solid black;
+}
+
+.linkTitle{
+    text-decoration: none;
+    color: #022C51;
+}
+
+.linkTitle:hover{
+    text-decoration: none;
+    background-color: rgba(58, 58, 58, 0.3);
+    padding: 10px;
+    border-radius: 20px;
+    color: #F7A500;
+}
+
+.select{
+    background-color: rgba(58, 58, 58, 0.3);
+    color: #F7A500;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.select:hover{
+    background-color: rgba(58, 58, 58, 0.3);
+    text-decoration: none;
+    color: #F7A500;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 375px) {
+    .linkTitle, .select {
+        font-size: 20px;
+    }
+    .linkTitle:hover{
+        text-decoration: none;
+        background-color: rgba(58, 58, 58, 0.3);
+        padding: 10px;
+        border-radius: 20px;
+        color: #F7A500;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .linkTitle, .select {
+        font-size: 20px;
+    }
+    .linkTitle:hover{
+        text-decoration: none;
+        background-color: rgba(58, 58, 58, 0.3);
+        padding: 10px;
+        border-radius: 20px;
+        color: #F7A500;
+    }
+}
+
+.container {
+    margin: 20px 70px;
+    max-width: 1200px;
+    background: linear-gradient(to right, rgb(2, 44, 81, .3), rgb(247, 165, 0, .3));
+    padding: 10px 20px;
+    border-radius: 40px;
+}
+
+@media screen and (max-width: 375px) {
+    .container {
+        margin: 20px 0;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        margin: 20px 0;
+        max-width: 100%;
+    }
+}
+
+.containerCards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.card {
+    background-color: rgb(2, 44, 81);
+    padding: 10px;
+    height: 150px;
+    width: 480px;
+    border-radius: 30px;
+    margin: 10px;
+}
+
+.card-body {
+    padding: 0 !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (max-width: 375px) {
+    .card {
+        margin: 10px 50px;
+        max-width: 70%;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 768px) {}
+
+.card-body {
+    padding: 0 !important;
+    align-items: center;
+}
+
+.cardImg {
+    width: 130px;
+    border-radius: 30px;
+}
+
+.card-title {
+    margin-top: 15px;
+    color: rgb(236, 236, 236);
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 22px;
+}
+
+@media screen and (max-width: 375px) {
+    .cardImg {
+        margin-left: 43px;
+    }
+
+    .card-title {
+        margin-left: 0px;
+        margin-top: 10px;
+        font-size: 18px;
+        margin-bottom: 0px;
+    }
+
+    .text-muted {
+        margin-left: 0px;
+        font-size: 10px !important;
+    }
+
+    .card-title,
+    .cardImg,
+    .text-muted:hover {
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .card-title {
+        text-align: center;
+        margin-left: 50px;
+    }
+
+    .text-muted {
+        margin-left: 40px;
+    }
+
+    .card-title,
+    .cardImg,
+    .text-muted:hover {
+        cursor: pointer;
+    }
+}
+
+.iconImg {
+    width: 30px;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 375px) {
+    .iconImg {
+        width: 20px;
+        margin-left: 10px;
+/*         display: none; */
+    }
+
+    .iconImg:hover {
+        cursor: pointer;
+        background-color: rgba(230, 230, 230, 0.239);
+        border-radius: 5px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .iconImg {
+        width: 20px;
+/*         display: none; */
+margin-left: 45px;
+    }
+
+    .iconImg:hover {
+        cursor: pointer;
+        background-color: rgba(230, 230, 230, 0.239);
+        border-radius: 5px;
+    }
+}
+
+.card-title,
+.cardImg,
+.text-muted:hover {
+    cursor: pointer;
+}
+
+.zoom {
+    transform: scale(2);
+    transition: all .3s ease-in-out;
+    z-index: 1;
+}
+
+.zoom1 {
+    transform: scale(1);
+    transition: all .3s ease-in-out;
+}
+
+.iconImg:hover {
+    cursor: pointer;
+    background-color: rgba(230, 230, 230, 0.239);
+    border-radius: 5px;
+}
+
+.navPage {
+    display: flex;
+    justify-content: center;
+}
+
+.pagination {
+    justify-content: center;
+}
+
+.page-link {
+    background-color: #022C51 !important;
+    color: #F7A500;
+}
+
+.eliminar{
+    display: none;
+}

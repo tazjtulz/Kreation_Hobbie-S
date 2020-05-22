@@ -1,0 +1,553 @@
+* {
+
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+.menuCaja {
+
+    height: 80px;
+    width: 100%;
+    position: relative;
+    margin-top: 0px;
+
+
+}
+
+.contFormu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 38%;
+    margin-right: 30px;
+    margin-left: 100px;
+}
+
+.CajaTitulo {
+    margin-top: 100px;
+    background-color: #022C51;
+    width: 100%;
+    height: 70px;
+    margin-right: 0px;
+    margin-left: 100px;
+}
+
+h1 {
+    color: #FFFF;
+    text-align: center;
+    font-family: 'Courgette', cursive;
+    font: 80%;
+}
+
+.form {
+    background-color: rgba(247, 165, 0, .8);
+    padding: 20px;
+    width: 100% !important;
+    margin: 0px auto 0;
+    border-radius: 0px !important;
+    margin-bottom: 70px;
+    margin-right: 100px;
+}
+
+.NombresApellidos {
+    display: flex;
+}
+
+.ApellidoSolo {
+    margin-left: 15px;
+}
+
+.contInput {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.contInput input,
+.contInput select,
+.contInput textarea {
+    padding: 10px;
+    border-radius: 0px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.inputGender {
+    margin-bottom: 15px;
+}
+
+
+
+.contInput input::placeholder {
+    color: rgb(73, 73, 73)
+}
+
+.contInput input:focus,
+.contInput select:focus {
+    background-color: rgb(241, 241, 241);
+    box-shadow: 0 0 4px rgb(5, 162, 253);
+    transition: all .3s ease-in-out;
+}
+
+.contInput input:hover,
+.contInput select:hover,
+.contInput textarea:hover {
+    background-color: rgb(240, 240, 240);
+}
+
+.contBtm {
+    justify-content: center;
+    align-items: center;
+}
+
+.contBtm button {
+    padding: 10px 20px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-radius: 3px;
+    border: none;
+    font-size: 14px;
+    font-family: 'Courgette', cursive;
+}
+
+.contBtm button:hover {
+    background-color: rgb(0, 0, 0);
+    transform: scale(1.1);
+    transition: all .4s ease-in-out;
+    color: #ffffff !important;
+    font-family: 'Courgette', cursive !important;
+
+}
+
+label {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 300px;
+}
+
+hr {
+    /* background: #ffffff !important;  */
+    height: 6px !important;
+    width: 75%;
+    background: linear-gradient(-45deg, #F7A500, #E73C7E, #23A6D5, #23D5AB, #022C51) !important;
+}
+
+h6 {
+    justify-content: center;
+    text-align: center;
+    margin-top: 25PX;
+}
+
+.creacionUsuario {
+    display: flex;
+}
+
+
+.confirmarContraseña {
+    margin-left: 15px;
+}
+
+.textoBoton {
+    color: #ffffff !important;
+    font-family: 'Courgette', cursive !important;
+    font-size: 15px;
+    text-decoration: none;
+
+}
+
+.textBoton {
+    color: #FFFF !important;
+    text-decoration: none;
+}
+
+.textTermin,
+.terM {
+    text-decoration: none;
+    color: #022C51 !important;
+}
+
+.inputTerms {
+    display: flex;
+
+}
+
+a {
+    text-decoration: none;
+    color: #FFFF;
+}
+
+img {
+    width: 65%;
+    margin-right: 20px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.contCuatroicons {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.contIcons {
+    margin-top: 15px !important;
+    margin-bottom: 30px !important;
+}
+
+h2 {
+    text-align: center;
+    color: #022C51;
+    font-family: 'Courgette', cursive;
+}
+
+.textArte {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 2px #ffffff !important;
+}
+
+.textArte:hover {
+    transition: 2s;
+    Transform: scale (0, 8);
+}
+
+
+
+
+.textArtesMarciales {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.textBaloncesto {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.textCiclismo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.textCineteatro {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.textCocina {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.textDeportesx {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.textFotografia {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.textFutbol {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.textLol {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.textLectura {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.textMadera {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.textMusica {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.textTatoo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.textTravesia {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.textVgames {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+h4 {
+    margin-top: 0px;
+    margin-bottom: 8px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+/* como hacer el hover? */
+img :hover {
+    background: #022C51;
+    scale: 0.7;
+
+}
+
+/* como hacer para ffuncionar hover y combiar color de texto ?  */
+h4 :hover {
+    color: #FFFF;
+}
+
+
+
+
+
+@media screen and (min-width: 540px) {
+    .form {
+        width: 100%;
+        border-radius: 0px !important;
+
+    }
+
+    .contTotal {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contTotal {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .form {
+        width: 70%;
+        border-radius: 0px !important;
+    }
+
+}
+
+@media screen and (min-width:1024px) {
+    .form {
+        width: 50%;
+        border-radius: 0px !important;
+
+    }
+
+
+}
+
+
+/* aca doy estilos al contenedor vertical */
+
+.containerSlider {
+    display: flex;
+    justify-content: center;
+    background: rgb(255, 255, 255);
+    width: 100%;
+    margin-top: 0px;
+    height: 800px;
+
+
+}
+
+
+.thumbNails {
+    display: flex;
+    flex-direction: column;
+    line-height: 0px;
+
+}
+
+
+.thumbNails li {
+    flex: auto;
+    list-style: none;
+
+}
+
+
+.thumbNails li a {
+    display: block;
+
+}
+
+
+.thumbNails img {
+    width: 30px;
+    height: 30px;
+    /* sera aca cambiar de 20 a la /16 parte de 100 ? */
+    object-fit: cover;
+    object-position: top;
+    background: rgba(247, 165, 0, .8);
+    margin: 0;
+    padding: 0;
+}
+
+.slides li {
+    width: 350px;
+    height: 784px;
+    position: absolute;
+    z-index: 1;
+    list-style: none;
+
+}
+
+.slides img {
+    height: 784px;
+    object-fit: cover;
+    object-position: top;
+    width: 433px;
+    margin-left: 15px;
+}
+
+.slides {
+    overflow: hidden;
+    width: 450px;
+    height: 784px;
+    margin-right: 0px;
+
+}
+
+.slides li:target {
+    z-index: 3; 
+    /* -webkit-animation: slide 1s 1; */
+}
+
+@keyframes slide {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+
+/* aca lo del muck up celular */
+
+.topCelu {
+    margin-left: 33px;
+    margin-bottom: 0px;
+    width: 463px;
+    margin-top: 120px;
+}
+
+
+/* contenedor de todo el celularslider */
+.contenedorcelularlider {
+    margin-top: 30px;
+}
+
+/* 
+contenedor total con dos contenedores grandes
+ */
+
+.contTotal {
+    display: flex;
+    flex-direction: row;
+}
+
+.bottomCelu {
+    margin-left: 33px;
+    margin-top: 0px;
+    width: 463px;
+}

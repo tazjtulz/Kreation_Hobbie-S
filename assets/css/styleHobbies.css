@@ -1,0 +1,107 @@
+
+/* card-hobbies */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  *:focus {
+    outline: 0;
+  }
+  
+  html {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+  
+  body {    
+      background: rgb(0,32,36);
+      background: linear-gradient(90deg, rgba(0,32,36,1) 0%, rgba(247,166,0,0.5802696078431373) 100%);
+  }
+  h1 span{font-family: 'Courgette', cursive; display:block; font-size:45px; text-transform:none; margin-bottom:20px; margin-top:30px; font-weight:700}
+  .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin: 12px auto;
+      max-width: 1000px;
+  }
+  
+  .card {
+      background-color: #ffffff;
+      box-shadow: 300px 0 50px rgba(0, 0, 0, 0.5) inset;
+      border-radius: 15px;
+      height: 320px;
+      margin: 20px 0;
+      position: relative;
+      transform: perspective(2000px);
+      transform-style: preserve-3d;
+      transition: box-shadow 1s ease,
+                      transform 1s ease,
+                              z-index 1s ease;
+      width: 220px;
+  }
+  
+  .card:hover {
+      box-shadow: 20px 0 50px rgba(0, 0, 0, 0.5) inset;
+      transform: perspective(2000px) rotateZ(-10deg);
+      z-index: 1000;
+  }
+  
+  .card .img-box {
+      border: 1px solid #000000;
+      border-radius: 15px;
+      height: 100%;
+      position: relative;
+      transform-origin: left;
+      transition: transform 1s ease;
+      width: 100%;
+      z-index: 1;
+  }
+  
+  .card:hover .img-box {
+      transform: rotateY(-135deg);
+      border-radius: 15px;
+  }
+  
+  .card .img-box img {
+      height: 100%;
+      left: 0;
+      border-radius: 15px;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      width: 100%;
+  }
+  
+  .card .details {
+      left: 0;
+      padding: 20px;
+      position: absolute;
+      top: 0;
+  }
+  
+
+/* mis css */
+.publicaciones{
+  font-family: 'Courgette', cursive;
+  font-size: 30px;
+  font-weight: 900;
+  color:white;
+  } 
+    
+.logo{
+    width: 20%;
+}
+
+.imgIcon{
+    width: 28px;
+    justify-content: flex-end;
+}
+
+  .btn-primary {
+    color: #fff;
+    background-color: #022C51;
+    border-color: #022C51;
+}

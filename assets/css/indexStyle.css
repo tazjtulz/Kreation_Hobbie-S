@@ -1,0 +1,400 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Titillium Web', sans-serif;
+    background-color: rgb(212, 172, 41);
+    
+}
+
+/* VIDEO DE FONDO */
+
+.bg_vid{
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);/* MOSTRAR EL VIDEO SIEMPRE DESDE EL CENTRO */
+    z-index: -100;
+}
+
+
+@media screen and (max-width:720px){
+    body{
+        background-color: rgb(2, 44, 81);/* ya busco una imagen */
+    }
+
+    .bg_vid{
+        display: none;
+    }
+}
+
+/* ***************************************************** */
+
+/* HEADER */
+
+header{
+    display: block;
+}
+
+.containerHeader {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto
+}
+
+.containHead{
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    /* margin-right: -15px;
+    margin-left: -15px; */
+}
+
+/* Parte izquierda - Logo */
+.logContainer{
+    position: relative;
+    
+    padding-left: 15px;
+    padding-right: 15px;
+
+    flex: 0 0 60%;
+    /* flex: indica la capacidad de un elemento flexible para alterar sus dimensiones y llenar el espacio disponible.
+    flex-grow: 0;cuánto puede crecer un elemento en relación a los demás
+    flex-shrink: 0;cuánto puede disminuir un elemento en relación a los demás
+    flex-basis: 60%;especifica el valor inicial del tamaño principal de un elemento flex
+     */
+    max-width: 50%;
+}
+
+.logHead{
+    width: 80%;
+}
+
+
+/* Parte derecha - formulario LogIn */
+
+.contenedorDerecha{
+    position: relative;
+    
+    padding-left: 15px;
+    padding-right: 15px;
+
+    flex: 0 0 40%;
+    max-width: 50%;
+
+    padding-bottom: 40px;
+    margin: 30px auto;
+    background-color:rgba(2, 44, 81, 0.72);/* color oficial */
+    
+    /* border: 1px solid whitesmoke; */
+    border-radius: 30px;
+}
+
+.slideLogin{
+    display: flex;
+}
+
+.fontH2{
+    margin: 50px auto 10px;
+    font-family: 'Courgette', cursive;
+    color: white;
+    text-align: center;
+}
+
+.fontParrCont{
+    font-family: 'Titillium Web', sans-serif;
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.formIngreso{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ingresoInput{
+    margin: 10px auto;
+
+    width: 50%;
+    height: 30px;
+    border-radius: 30px;
+    text-align: center;
+    color: rgb(2, 44, 81);
+}
+
+.contPass{
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+/* .inputPass{
+    position: relative;
+    margin: 10px auto;
+
+    flex: 3 0 100%;
+    max-width: 100%;
+
+    
+    height: 30px;
+    border-radius: 30px;
+    text-align: center;
+    color: rgb(2, 44, 81);
+} */
+
+.passHide{
+    position: absolute;
+    margin-bottom: 50px;
+    margin-left: 80px;
+    justify-content: center;
+    
+    padding-left: -5px;
+    border-radius: 50%;
+    height: 30px;
+    width: 35px;
+    background-color: rgb(2, 44, 81);
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.passView{
+    position: absolute;
+    margin-bottom: 50px;
+    margin-left: 80px;
+    justify-content: center;
+    
+    
+    border-radius: 50%;
+    height: 30px;
+    width: 35px;
+    color: rgb(2, 44, 81);
+    background-color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+input::placeholder {
+    text-align: center;
+    color: rgb(212, 172, 41);
+    /* padding-left: 50px;
+    margin-left: 30px */;
+}
+
+.btnIngreso{
+    margin-top: 10px;
+    border-radius: 50px;
+    width: 50%;
+    height: 30px;
+    color: white;
+    background-color: rgb(2, 44, 81);
+    cursor: pointer;
+}
+
+.fontSmall{
+    color: white;
+    text-align: center;
+    font-size: small;
+    padding-top: 15px;
+}
+
+@media screen and (max-width:990px){
+    .ingresoInput{
+        width: 60%;
+    }
+
+    #mostrar_ocultar{
+        margin-left: 80px;
+    }
+}
+
+
+@media screen and (max-width:760px){
+    .containHead{
+        flex-direction: column;
+        align-items: center;
+    } 
+
+    .logContainer{
+        flex-basis: 80%;
+        max-width: 80%;
+    }
+    
+    .logHead{
+        width: 100%;
+    }
+    
+    /* Parte derecha - formulario LogIn */
+    
+    .loginContainer{
+        flex-basis: 90%;
+        max-width: 90%;
+        background-color:rgba(212, 172, 41, 0.6);/* color oficial */
+    }
+
+    .ingresoInput{
+        width: 50%;
+    }
+
+    #mostrar_ocultar{
+        margin-left: 100px;
+    }
+     
+}
+
+@media screen and (max-width:580px){
+    .ingresoInput{
+        width: 60%;
+    }
+
+    #mostrar_ocultar{
+        margin-left: 100px;
+    }
+}
+
+@media screen and (max-width:380px){
+    .ingresoInput{
+        width: 70%;
+    }
+
+    #mostrar_ocultar{
+        margin-left: 60px;
+    }
+}
+
+
+.buttonSection{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+
+
+.downApp{
+    display: flex;
+    justify-content: center;
+}
+
+.imgApp{
+    width: 150px;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+
+/* AJUSTES DE DIMENSIÓN DE PANTALLA */
+
+@media (min-width:576px) {
+    .containerHeader {
+        max-width: 540px
+    }
+}
+
+@media (min-width:768px) {
+    .containerHeader {
+        max-width: 720px
+    }
+}
+
+@media (min-width:992px) {
+    .containerHeader {
+        max-width: 960px
+    }
+}
+
+@media (min-width:1200px) {
+    .containerHeader {
+        max-width: 1150px
+    }
+}
+
+
+
+
+/* FOOTER */
+
+.footer{
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.blockFoot1,
+.blockFoot2,
+.blockFoot3{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    color: white;
+}
+
+.blockFoot4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.linkFoot{
+    text-decoration: none;
+    color: white;
+}
+
+.fontFooter{
+    font-family: 'Titillium Web', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.kreatLog{
+    width: 10%;
+}
+
+@media screen and (max-width:720px){
+    .blockFoot1,
+    .blockFoot2,
+    .blockFoot3{
+        flex-direction: column;
+        align-items: center;
+        color: white;
+    }
+
+    .kreatLog{
+        width: 20%;
+    }   
+}
+
+
+
+.downApp{
+    display: flex;
+    justify-content: center;
+}
+
+.imgApp{
+    width: 150px;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+
+.contPassw{
+    display: flex;
+}

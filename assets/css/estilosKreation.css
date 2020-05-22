@@ -1,0 +1,286 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* navegacion y RRSS de la pagina de kreatrion */
+
+.nav{
+    background-color: rgb(255, 255, 255); 
+    height: 70px;
+    padding: 20px;
+
+    width: 80%;
+    display: flex;
+    align-items: end;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+
+    border-bottom: 1px solid gray;
+    
+
+
+
+}
+.contLogoHeader{
+        margin: -24px 120px;
+        margin-left: 215px;
+}
+.contHome{
+    margin: -10px 70px;
+}
+
+.logoHeader{
+    height: 60px;
+}
+
+.icons{
+    width: 30px;
+
+}
+.home{
+    height: 40px;
+}
+
+.redesSociales{
+    margin: 0px 50px;
+}
+
+/* fin de nav */
+
+#section0{
+    margin-top: 200px;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 0px 100px;
+
+
+}
+#section1{
+    background-image: url(../Multimedia_Proyecto_Final/trabajos/1bg1-8.png);
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    padding: 100px;
+}
+
+.imgTitulo{
+    width: 70%;
+    margin: -45px;
+    margin-left: 50px;
+}
+body{
+  /*   background: rgb(0,184,158); */
+    background: linear-gradient(27deg, rgba(0,184,158,1) 0%, rgba(81,81,176,1) 35%, rgba(0,212,255,1) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contTitulo{
+    text-align: center;
+    color: white ;
+    margin-right: 80px;
+}
+.body{
+
+    margin: 0 auto;
+    width: 80%;
+
+}
+.apps{
+    width: 60px;
+    margin: 10px;
+    height: 60px;
+
+
+}
+.nombresApp{
+    width: 50px;
+    margin: 0 5px;
+}
+.trabajos{
+    width: 20%;
+    margin: 10px;
+    border-radius: 10px;
+}
+.trabajos:hover{
+    transform: scale(120%);
+    transition: ease-in-out cubic-bezier(0.6, -0.28, 0.735, 0.045);
+
+}
+
+h1{
+    font-size: 4rem;
+    font-family: 'Merriweather';
+    font-weight: lighter;
+} 
+h2{
+    font-size: 2rem;
+    font-family: 'Merriweather';
+    font-weight: bold;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+
+.pTales{
+    font-size: 20px;
+    padding-left: 100px;
+    font-weight: 700;
+    text-align: end;
+}
+.contImg{
+
+    width: 30%;
+    padding: 5px;
+}
+.twoFile{
+    display: flex;
+    align-items: flex-end;
+    align-content: flex-end;
+    margin: 0 auto;
+}
+.aside{
+    margin: 0 auto;
+    display: flex;
+    align-content: center;
+    align-items: center;
+
+}
+
+h3{
+    margin: 80px 0 20px 0;
+    text-align: center;
+    font-size: 4rem;
+    font-family: 'Merriweather';
+    font-weight: lighter;
+
+    color:  white;
+}
+
+#section2{
+    background-image: url(../Multimedia_Proyecto_Final/trabajos/q-8.png);
+    background-size: cover;
+    width: 100%;
+    height: 530px;
+    padding: 74px  100px;
+
+
+}
+
+#section3{
+ 
+   
+    width: 80% ;
+    height: 500px;
+    background-image: url(../Multimedia_Proyecto_Final/trabajos/qq-8.png );
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    padding: 20px;
+    padding-top: 100px;
+    margin-bottom: 20px;
+    flex-direction: column;
+
+}
+
+
+h4{
+    text-align: center;
+    margin: -25px auto;
+    color: rgb(82, 114, 255);
+    
+
+    margin-bottom: 20px;
+    font-size: 4rem;
+    font-family: 'Merriweather';
+    font-weight: lighter;
+    margin-right: 325px;
+}
+
+
+  .EquipoDeTrabajo{
+      display: flex;
+      width: 100%;
+padding: 20px;
+
+      align-items: center;
+      align-content: center;
+      margin-top: 50px;
+      
+  }
+
+
+  .codigo{
+      width: 100%;
+      margin: 10px;
+      padding: 0 30px;
+      text-align: center;
+      text-decoration: none;
+      color: rgb(80, 185, 247);
+      font-family: 'Merriweather';
+
+  }
+  .codigo:hover{
+    transform: scale(150%);
+    transition: ease-in-out cubic-bezier(0.6, -0.28, 0.735, 0.045);
+   
+
+}
+.qr{
+    width: 100px;
+    margin: 0 auto ;
+}
+.txth4{
+    margin: ;
+}
+
+
+
+
+@media (max-width: 650px){
+
+    .nav{
+        width: 100%;
+    }
+
+#section0{
+    margin-top: 100px;
+}
+#section1{
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+#section2{
+    width: 100%;
+}
+#section3{
+    width: 100%;
+}
+.twoFile{
+    width: 100%;
+}
+.contImg{
+    width: 100%;
+}
+.quienesSomos{
+    width: 100%;
+}
+.aside{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+}

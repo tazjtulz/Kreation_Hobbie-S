@@ -3,15 +3,33 @@ console.log(btnNoGusta)
 
 const funcLike = (e)=>{
     e.target.classList.toggle('mostrar') 
-    console.log(e)  
+    console.log(e)
+
+    // LOCAL STORAGE
+    if(e.target.classList.contains('mostrar')){
+        localStorage.setItem('like', 'Sí');
+    }  else{
+        localStorage.setItem('like', 'No');
+
+    }
 }
+
 
 for(let i =0; i<btnNoGusta.length; i+=1){
     btnNoGusta[i].addEventListener('click', funcLike);
     console.log(btnNoGusta[i])
 };
-const meGustaguardados = JSON.stringify();
-localStorage.setItem('btnNoGusta', meGustaguardados)
+
+
+if(localStorage.getItem('like')==='Sí'){
+    e.target.classList.add('mostrar');
+}else{
+    e.target.classList.remove('mostrar');
+}
+
+
+/* const meGustaguardados = JSON.stringify();
+localStorage.setItem('btnNoGusta', meGustaguardados) */
 
 
 // MDB Lightbox Init
